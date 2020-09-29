@@ -1,21 +1,21 @@
 import React from 'react';
+import { slide as MobileMenu } from 'react-burger-menu';
+import DesktopMenu from './DesktopMenu.js';
+
 import './NavigationBar.scss';
 
 function NavigationBar() {
+    const browserWidth = window.innerWidth;
+
     return (
         <div className="nav-container">
-            <h3 className="website-logo"> Cool Logo </h3>
-
-            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-            <nav>
-                <ul>
-                    <li><a href="#"> Projects </a></li>
-                    <li><a href="#"> About </a></li>
-                </ul>
-            </nav>
+            { browserWidth <= 768 
+                ?   <MobileMenu>
+                        <a id="home-link" className="menu-item" href="/"> Projects </a>
+                        <a id="about-link" className="menu-item" href="/"> About </a>
+                    </MobileMenu>
+                : <DesktopMenu />
+            }
         </div>
     )
 }

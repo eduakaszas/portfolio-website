@@ -9,9 +9,9 @@ function App() {
 	return (
 		<div className="container">
 			<NavigationBar />
-			<EntryScreen />
+			{/* <EntryScreen />
 			<Projects />
-			<AboutMe />
+			<AboutMe /> */}
 		</div>
 	);
 };
