@@ -1,6 +1,6 @@
 import React from 'react';
-import { slide as MobileMenu } from 'react-burger-menu';
-import DesktopMenu from './DesktopMenu.js';
+import DesktopMenu from '../DesktopMenu/DesktopMenu.js';
+import MobileMenu from '../MobileMenu/MobileMenu.js';
 
 import './NavigationBar.scss';
 
@@ -10,10 +10,7 @@ function NavigationBar() {
     return (
         <div className="nav-container">
             { browserWidth <= 768 
-                ?   <MobileMenu>
-                        <a id="home-link" className="menu-item" href="/"> Projects </a>
-                        <a id="about-link" className="menu-item" href="/"> About </a>
-                    </MobileMenu>
+                ? <MobileMenu />
                 : <DesktopMenu />
             }
         </div>

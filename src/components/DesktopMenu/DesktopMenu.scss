@@ -2,7 +2,7 @@
 $white: #FFF;
 $black: #202225;
 
-nav ul {
+.nav-item-list {
     margin-top: 0;
     padding: 1.3em;
     display: flex;
@@ -10,11 +10,11 @@ nav ul {
     list-style: none;
 }
 
-li a {
+.desktop-menu-item {
     margin-left: .6em;
     text-decoration: none;
 }
 
-li a:visited {
+.desktop-menu-item:visited {
     color: $black;
 }

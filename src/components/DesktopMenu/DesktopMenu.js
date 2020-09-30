@@ -6,8 +6,8 @@ function DesktopMenu() {
     return (
         <nav className="navbar">
             <ul className="nav-item-list">
-                <li className="desktop-menu-item"><a href="#"> Projects </a></li>
-                <li className="desktop-menu-item"><a href="#"> About </a></li>
+                <li><a href="#" className="desktop-menu-item"> Projects </a></li>
+                <li><a href="#" className="desktop-menu-item"> About </a></li>
             </ul>
         </nav>
     )
