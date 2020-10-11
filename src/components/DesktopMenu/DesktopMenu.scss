@@ -8,11 +8,15 @@ $black: #202225;
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    background-color: transparent;
 }
 
 .desktop-menu-item {
+    position: relative;
     margin-left: .6em;
     text-decoration: none;
+    z-index: 1000;
+    cursor: pointer !important;
 }
 
 .desktop-menu-item:visited {
