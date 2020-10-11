@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PaintPots from '../PaintPots/PaintPots.js';
+
+
 import './CanvasBackground.scss';
 
 class CanvasBackground extends Component {
@@ -8,8 +11,7 @@ class CanvasBackground extends Component {
         this.contextRef = React.createRef();
         
         this.state = {
-			isDrawing: false,
-			pickedColor: null
+            isDrawing: false
 		}
     }
     
@@ -29,12 +31,13 @@ class CanvasBackground extends Component {
     }
 
     startDrawing = ({nativeEvent}) => {
-        console.log("fuck u")
+        const { pickedColor } = this.props;
         const { offsetX, offsetY } = nativeEvent;
         const currentContextRef = this.contextRef.current;
 
         currentContextRef.beginPath();
-        currentContextRef.moveTo(offsetX, offsetY)
+        currentContextRef.moveTo(offsetX, offsetY);
+        currentContextRef.strokeStyle = pickedColor;
         
         this.setState({
             isDrawing: true
@@ -48,7 +51,6 @@ class CanvasBackground extends Component {
         this.setState({
             isDrawing: false
         })
-
 	}
 
 	draw = ({nativeEvent}) => {
@@ -60,16 +62,32 @@ class CanvasBackground extends Component {
 
         currentContextRef.lineTo(offsetX, offsetY);
         currentContextRef.stroke();
-	}
+    }
+
+    // clearCanvas = () => {
+    //     const currentContextRef = this.contextRef.current;
+    //     const canvas = this.canvasRef.current;
+    //     canvas.width = window.innerWidth * 2;
+    //     canvas.height = window.innerHeight * 2;
+
+    //     currentContextRef.clearRect(0, 0, currentContextRef.canvas.width, currentContextRef.canvas.height);
+    // }
 
     render() {
+        const { selectColor } = this.props;
+
         return (
-            <canvas 
-                onMouseDown={ this.startDrawing }
-                onMouseUp={ this.finishDrawing }
-                onMouseMove={ this.draw }
-                ref={ this.canvasRef }
-            />
+            <div>
+                <canvas 
+                    onMouseDown={ this.startDrawing }
+                    onMouseUp={ this.finishDrawing }
+                    onMouseMove={ this.draw }
+                    ref={ this.canvasRef }
+                />
+                <PaintPots selectColor={ selectColor }
+                            // clearCanvas={ this.clearCanvas }
+                />
+            </div>
         )
     }
 }

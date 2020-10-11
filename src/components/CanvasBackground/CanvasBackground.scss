@@ -1,3 +1,5 @@
 canvas {
     position: absolute;
+    z-index: 1;
+    cursor: url('../images/pencil.png') 0 25, pointer;
 }
