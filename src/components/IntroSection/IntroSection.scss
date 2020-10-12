@@ -1,0 +1,12 @@
+.intro-section {
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+        margin-top: 1em;
+        flex-direction: row;
+    }    
+}
