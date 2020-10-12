@@ -8,4 +8,4 @@ function IntroImage() {
     )
 }
 
-export default IntroImage
+export default IntroImage;
