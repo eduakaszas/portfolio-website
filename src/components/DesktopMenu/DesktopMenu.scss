@@ -1,6 +1,7 @@
 // colours
 $white: #FFF;
 $black: #202225;
+$gray: #888888;
 
 .nav-item-list {
     padding: 0 2em;
@@ -8,6 +9,18 @@ $black: #202225;
     justify-content: flex-end;
     list-style: none;
     background-color: transparent;
+}
+
+ul li.switch {
+    position: absolute;
+    left: 0;
+    margin-left: 2em;
+}
+
+ul li.draw-mode {
+    position: absolute;
+    left: 5em;
+    color: $gray;
 }
 
 .desktop-menu-item {
@@ -21,3 +34,4 @@ $black: #202225;
 .desktop-menu-item:visited {
     color: $black;
 }
+
