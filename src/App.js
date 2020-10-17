@@ -11,10 +11,12 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			pickedColor: null
+			pickedColor: null, 
+			isDrawModeOn: false
 		}
 	}
 
+	// select color when clicking on one of the paint pots
 	selectColor = e => {
         const selectedColor = e.target.style.backgroundColor;
 		console.log( selectedColor )
@@ -22,23 +24,33 @@ class App extends Component {
         this.setState({
             pickedColor: selectedColor
         })
+	}
+	
+	// function to toggle the switch
+	switchDrawMode = isDrawModeOn => {
+        this.setState({ isDrawModeOn });
     }
 
 	render() {
 		const browserWidth = window.innerWidth;
-		const { pickedColor } = this.state;
+		const { pickedColor, isDrawModeOn } = this.state;
 
 		return (
 			<div className="container">
-				{ browserWidth >= 1000
-					? <CanvasBackground pickedColor={ pickedColor }
-										selectColor={ this.selectColor } 
+				{/* Only show canvas when draw mode is on AND the width of browser is >+ 1000 */}
+				{ browserWidth >= 1000 && isDrawModeOn
+					? <CanvasBackground 
+							pickedColor={ pickedColor }
+							selectColor={ this.selectColor } 
 					/>
 					: null
 				}
-				<NavigationBar />
+				<NavigationBar 
+					switchDrawMode={ this.switchDrawMode } 
+					isDrawModeOn={ isDrawModeOn }
+				/>
 				<IntroSection />
-				{/* <EntryScreen />
+				{/* 
 				<Projects />
 				<AboutMe /> */}
 			</div>

@@ -4,14 +4,17 @@ import MobileMenu from '../MobileMenu/MobileMenu.js';
 
 import './NavigationBar.scss';
 
-function NavigationBar() {
+function NavigationBar(props) {
     const browserWidth = window.innerWidth;
 
     return (
         <div className="nav-container">
             { browserWidth <= 768 
                 ? <MobileMenu />
-                : <DesktopMenu />
+                : <DesktopMenu 
+                        switchDrawMode={ props.switchDrawMode } 
+                        isDrawModeOn={ props.isDrawModeOn }
+                />
             }
         </div>
     )
