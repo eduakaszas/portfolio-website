@@ -3,11 +3,19 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20em 20em 20em;
+    align-items: center;
     list-style: none;
     z-index: -10000;
 }
 
+.projects-list .text {
+    width: 20em;
+    height: 15em;
+    justify-self: center;
+}
+
 .projects-list .image {
+    justify-self: center;
     width: 20em;
     height: 15em;
     background: #ccc;

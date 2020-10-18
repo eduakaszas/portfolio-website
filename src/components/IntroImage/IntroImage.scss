@@ -1,12 +1,12 @@
 .intro-image {
     order: -1;
     width: 20em;
-    height: 20em;
+    height: 15em;
     background: #ccc;
 
     @media (min-width: 992px) {
         flex: 1;
-        margin-right: 2em;
+        justify-self: center;
         order: 0;
     } 
 }

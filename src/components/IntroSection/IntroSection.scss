@@ -1,8 +1,6 @@
 .intro-section {
-    padding: 4em 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
     z-index: -1;
 
