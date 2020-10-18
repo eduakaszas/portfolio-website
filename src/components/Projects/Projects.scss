@@ -1,0 +1,14 @@
+.projects-list {
+    margin: 3em 2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20em 20em 20em;
+    list-style: none;
+    z-index: -10000;
+}
+
+.projects-list .image {
+    width: 20em;
+    height: 15em;
+    background: #ccc;
+} 

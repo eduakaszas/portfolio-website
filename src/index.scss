@@ -6,6 +6,11 @@ $main: 'Public Sans', sans-serif;
 $white: #FFF;
 $black: #202225;
 
+html, body {
+	width: 100%; 
+	height: 100%;
+}
+
 html {
 	font-size: 17px;
 

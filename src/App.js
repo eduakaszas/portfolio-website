@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import IntroSection from './components/IntroSection/IntroSection';
-// import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Projects';
 // import AboutMe from './components/AboutMe/AboutMe';
 import CanvasBackground from './components/CanvasBackground/CanvasBackground';
 
@@ -50,9 +50,8 @@ class App extends Component {
 					isDrawModeOn={ isDrawModeOn }
 				/>
 				<IntroSection />
-				{/* 
 				<Projects />
-				<AboutMe /> */}
+				{/* <AboutMe /> */}
 			</div>
 		)
 	}
