@@ -36,7 +36,7 @@ class App extends Component {
 		const { pickedColor, isDrawModeOn } = this.state;
 
 		return (
-			<div className="container">
+			<div>
 				{/* Only show canvas when draw mode is on AND the width of browser is >+ 1000 */}
 				{ browserWidth >= 1000 && isDrawModeOn
 					? <CanvasBackground 

@@ -1,22 +1,42 @@
 .projects-list {
-    margin: 3em 2em;
+    padding: 0;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20em 20em 20em;
+    //grid-template-columns: 100%;
+    //grid-template-columns: 50% 50%;
+    //grid-template-rows: 20em 20em 20em;
+    justify-content: center;
     align-items: center;
     list-style: none;
     z-index: -10000;
+
+    @media (min-width: 768px) {
+        padding: 2em 2em;
+        grid-template-columns: 50% 50%;
+        flex-direction: row;
+    }    
 }
 
 .projects-list .text {
-    width: 20em;
-    height: 15em;
+    margin-bottom: 2em;
+    width: 100%;
+    //height: 15em;
     justify-self: center;
+
+    @media (min-width: 768px) {
+        // order: -1;
+        padding: 2em;
+        line-height: 1.3;
+    } 
 }
 
 .projects-list .image {
     justify-self: center;
-    width: 20em;
+    width: 100%;
     height: 15em;
     background: #ccc;
+
+    @media (min-width: 768px) {
+        justify-self: center;
+        // order: 0;
+    } 
 } 

@@ -1,9 +1,10 @@
 .intro-text {
+    order: 1;
+    justify-self: center;
+    width: 100%;
 
-    @media (min-width: 992px) {
-        display: grid;
-        justify-self: center;
-        flex: 1;
+    @media (min-width: 768px) {
+        order: -1;
         padding: 2em;
         line-height: 1.3;
     } 
