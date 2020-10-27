@@ -1,5 +1,5 @@
 .intro-section {
-    padding-top: 5em;
+    padding-top: 4em;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -8,6 +8,7 @@
         padding: 2em 2em;
         grid-template-columns: 50% 50%;
         flex-direction: row;
+        gap: 1em;
         z-index: -1;
     }    
 }
