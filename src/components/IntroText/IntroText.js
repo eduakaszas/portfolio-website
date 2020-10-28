@@ -3,7 +3,7 @@ import './IntroText.scss';
 
 function IntroText() {
     return (
-        <div  className="intro-text">
+        <div className="intro-text">
             <h2> 
                 Hello there! <br/>
                 I'm Édua and I like creating stuff for 

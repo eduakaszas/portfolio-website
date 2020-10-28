@@ -12,8 +12,6 @@ html, body {
 }
 
 html {
-	font-size: 17px;
-
 	@media (min-width: 320px) {
 		font-size: 13px; 
 	}
@@ -39,4 +37,12 @@ body {
 
 h1 {
 	font-size: 2em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: $black;
 }

@@ -1,12 +1,11 @@
 .intro-image {
     order: -1;
     justify-self: center;
-    width: 100%;
+    width: 90%;
     height: 15em;
     background: #ccc;
 
     @media (min-width: 768px) {
-        justify-self: center;
         order: 0;
     } 
 }
