@@ -1,8 +1,10 @@
 .intro-text {
+    order: 1;
+    justify-self: center;
+    width: 90%;
 
-    @media (min-width: 992px) {
-        flex: 1;
-        padding: 2em;
+    @media (min-width: 768px) {
+        order: -1;
         line-height: 1.3;
     } 
 }
@@ -12,6 +14,7 @@
 }
 
 .intro-text h4 {
+    color: #5A6064;
     font-weight: 400;
 }
 

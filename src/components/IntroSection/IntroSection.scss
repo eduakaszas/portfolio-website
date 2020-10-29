@@ -1,13 +1,14 @@
 .intro-section {
-    padding: 4em 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 4em;
+    display: grid;
     align-items: center;
-    z-index: -1;
-
-    @media (min-width: 992px) {
+    justify-content: center;
+    
+    @media (min-width: 768px) {
         padding: 2em 2em;
+        grid-template-columns: 50% 50%;
         flex-direction: row;
+        gap: 1em;
+        z-index: -1;
     }    
 }
