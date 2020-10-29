@@ -5,8 +5,8 @@ function IntroText() {
     return (
         <div className="intro-text">
             <h2> 
-                Hello there! <br/>
-                I'm Édua and I like creating stuff for 
+                Hello there! 
+                I'm Édua and I'm passionate about creating stuff for 
                 the web.
             </h2>
             <h4>

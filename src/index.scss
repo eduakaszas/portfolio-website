@@ -13,7 +13,7 @@ html, body {
 
 html {
 	@media (min-width: 320px) {
-		font-size: 13px; 
+		font-size: 12px; 
 	}
 
 	@media (min-width: 768px) {
@@ -32,7 +32,8 @@ body {
 	background: $white;
 	color: $black;
 	font-family: $main;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+	text-rendering: geometricPrecision;
 }
 
 h1 {

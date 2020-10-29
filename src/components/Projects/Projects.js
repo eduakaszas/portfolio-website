@@ -39,7 +39,7 @@ function Projects() {
                     </p>
                     <div className="links">
                         <a href="#"> Github </a>
-                        <a href="#"> Demo </a>
+                        {/* <a href="#"> Demo </a> */}
                     </div>
                 </div>
             </li>
