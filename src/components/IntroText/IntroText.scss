@@ -19,6 +19,8 @@
 }
 
 h4 span {
+    position: relative;
     text-decoration: underline;
+    z-index: 21;
     cursor: pointer!important;
 }
