@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PaintPots from '../PaintPots/PaintPots.js';
 
-
 import './CanvasBackground.scss';
 
 class CanvasBackground extends Component {
@@ -18,13 +17,15 @@ class CanvasBackground extends Component {
     componentDidMount() {
         const canvas = this.canvasRef.current;
         canvas.width = window.innerWidth * 2;
-        canvas.height = window.innerHeight * 2;
+        canvas.height = document.body.scrollHeight;
         // canvas.style.width = `${ window.innerWidth }px`;
+        canvas.style.height = `${ document.body.scrollHeight }px`;
         // canvas.style.height = `${ window.innerHeight }px`;
-
+      
         const context = canvas.getContext("2d");
-        context.scale(2,2);
+        context.scale(2,1);
         context.lineCap = "round";
+        context.lineJoin = "round";
         context.strokeStyle = "black";
         context.lineWidth = 4;
         this.contextRef.current = context;

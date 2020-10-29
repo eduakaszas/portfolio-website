@@ -56,6 +56,7 @@
 } 
 
 .links a {
+    position: relative!important;
     margin-right: 1em;
     padding: .6em;
     border-radius: 40px;
@@ -63,6 +64,6 @@
     text-align: center;
     color: #5A6064;
     background: #E0E7EB;
-    z-index: 1000;
+    z-index: 21;
     cursor: pointer!important;
 }
