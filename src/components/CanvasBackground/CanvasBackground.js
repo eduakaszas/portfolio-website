@@ -20,8 +20,7 @@ class CanvasBackground extends Component {
         canvas.height = document.body.scrollHeight;
         // canvas.style.width = `${ window.innerWidth }px`;
         canvas.style.height = `${ document.body.scrollHeight }px`;
-        // canvas.style.height = `${ window.innerHeight }px`;
-      
+
         const context = canvas.getContext("2d");
         context.scale(2,1);
         context.lineCap = "round";
