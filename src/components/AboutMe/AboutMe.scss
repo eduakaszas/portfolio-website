@@ -1,0 +1,28 @@
+.about-me-section {
+    display: grid;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        z-index: -1;
+    }  
+}
+
+.about-me-title {
+    width: 90%;
+    justify-self: center;
+}
+
+.about-me-text {
+    display: grid;
+    width: 90%;
+    justify-self: center;
+    color: #5A6064;
+
+    @media (min-width: 768px) {
+        order: 0;
+        padding: 0 2em;
+        line-height: 1.3;
+        grid-template-columns: 50% 50%;
+        gap: 2em;
+    } 
+}

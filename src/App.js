@@ -3,7 +3,7 @@ import './App.scss';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import IntroSection from './components/IntroSection/IntroSection';
 import Projects from './components/Projects/Projects';
-// import AboutMe from './components/AboutMe/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
 import CanvasBackground from './components/CanvasBackground/CanvasBackground';
 
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
 				/>
 				<IntroSection />
 				<Projects />
-				{/* <AboutMe /> */}
+				<AboutMe />
 			</div>
 		)
 	}
