@@ -4,12 +4,12 @@ import './IntroText.scss';
 function IntroText() {
     return (
         <div className="intro-text">
-            <h2> 
+            <h1> 
                 Hello there! 
                 I'm Édua and I'm passionate about creating stuff for 
                 the web.
-            </h2>
-            <h4>
+            </h1>
+            <h3>
                 You can find me on&nbsp; 
                 <span href="https://github.com/eduakaszas" target="_blank"> 
                     Github
@@ -22,7 +22,7 @@ function IntroText() {
                 <span href="mailto:edua.kaszas@gmail.com" target="_blank">
                     send me a message.
                 </span>
-            </h4>
+            </h3>
         </div>
     )
 };

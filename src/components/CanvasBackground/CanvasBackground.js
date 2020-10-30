@@ -26,7 +26,7 @@ class CanvasBackground extends Component {
         context.lineCap = "round";
         context.lineJoin = "round";
         context.strokeStyle = "black";
-        context.lineWidth = 4;
+        context.lineWidth = 2.5;
         this.contextRef.current = context;
     }
 
