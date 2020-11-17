@@ -10,10 +10,14 @@
     padding: 0;
 
     @media (min-width: 768px) {
-        padding: 2em 1.7em;
+        padding: 2em 4em;
         grid-template-columns: 60% 40%;
         gap: 1em;
         z-index: -1;
+    }    
+
+    @media (min-width: 1600px) {
+        padding: 2em 10em;
     }    
 }
 
@@ -21,7 +25,10 @@
     justify-self: center;
     width: 90%;
     height: 15em;
-    background: #ccc;
+    // background: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    // box-shadow: 3px 3px 20px rgb(230, 230, 230);
 
     @media (min-width: 768px) {
         order: -1;
@@ -30,7 +37,7 @@
 
 .text {
     margin-bottom: 2em;
-    width: 90%;
+    width: 80%;
     justify-self: center;
 
     @media (min-width: 768px) {
@@ -47,10 +54,10 @@
 
 @media (min-width: 768px) {
     .sudoku {
-        padding: 2em 1.7em;
+        padding: 2em 6em;
         display: grid;
         justify-self: center;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 40% 60%;
     }
     .sudoku-img {
         order: 0;
@@ -60,6 +67,12 @@
         order: -1;
     }
 } 
+
+@media (min-width: 1600px) {
+    .sudoku {
+        padding: 2em 10em;
+    }
+}
 
 .links a {
     position: relative !important;

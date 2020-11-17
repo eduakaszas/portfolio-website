@@ -1,11 +1,15 @@
 import React from 'react';
+import moodJournalImage from '../images/mood_journal.png';
+import portfolioImage from '../images/portfolio.png';
+// import moodJournalImage from '../images/moodjournal_take2.svg';
+// import portfolioImage from '../images/portfolio_take2.svg';
 import './Projects.scss';
 
 function Projects() {
     return (
         <ul className="projects-list">
             <li className="project">
-                <div className="image mood-img"></div>
+                <img src={ moodJournalImage } className="image mood-img"></img>
                 <div className="text mood-text">
                     <h3> Mood Journal </h3>
                     <p> 
@@ -19,7 +23,7 @@ function Projects() {
                 </div>
             </li>
             <li className="project sudoku">
-                <div className="image sudoku-img"></div>
+                <img className="image sudoku-img"></img>
                 <div className="text sudoku-text">
                     <h3> Sudoku game </h3>
                     <p> 
@@ -33,7 +37,7 @@ function Projects() {
                 </div>
             </li>
             <li className="project">
-                <div className="image site-img"></div>
+                <img src={ portfolioImage } className="image site-img"></img>
                 <div className="text site-text">
                     <h3> This website </h3>
                     <p> 

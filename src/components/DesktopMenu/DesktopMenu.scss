@@ -4,11 +4,15 @@ $black: #202225;
 $gray: #888888;
 
 .nav-item-list {
-    padding: 0 2.8em;
+    padding: 0 6em;
     display: flex;
     justify-content: flex-end;
     list-style: none;
     background-color: transparent;
+
+    @media (min-width: 1600px) {
+        padding: 0em 8em;
+    }    
 }
 
 ul li.switch {
