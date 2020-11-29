@@ -9,7 +9,7 @@ function Projects() {
     return (
         <ul className="projects-list">
             <li className="project">
-                <img src={ moodJournalImage } className="image mood-img"></img>
+                <img className="image mood-img"></img>
                 <div className="text mood-text">
                     <h3> Mood Journal </h3>
                     <p> 
@@ -37,7 +37,7 @@ function Projects() {
                 </div>
             </li>
             <li className="project">
-                <img src={ portfolioImage } className="image site-img"></img>
+                <img className="image site-img"></img>
                 <div className="text site-text">
                     <h3> This website </h3>
                     <p> 
