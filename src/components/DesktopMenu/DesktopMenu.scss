@@ -27,6 +27,18 @@ ul li.draw-mode {
     color: #5A6064;
 }
 
+ul li.switch {
+    position: absolute;
+    left: 0;
+    margin-left: 2em;
+}
+
+ul li.draw-mode {
+    position: absolute;
+    left: 5em;
+    color: #5A6064;
+}
+
 .desktop-menu-item {
     position: relative;
     margin-left: .6em;
