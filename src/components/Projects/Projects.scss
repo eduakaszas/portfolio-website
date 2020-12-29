@@ -2,7 +2,7 @@
     padding: 0;
     list-style: none;
     z-index: -10000;
-    background-color: #F5F7F9;
+    background-color: #f7f7f7;
 }
 
 .project {
@@ -35,6 +35,13 @@
     } 
 } 
 
+.mood-img {
+    background-image: url('../images/mood_journal.png');
+    background-color: #FFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .text {
     margin-bottom: 2em;
     width: 80%;
@@ -54,7 +61,7 @@
 
 @media (min-width: 768px) {
     .sudoku {
-        padding: 2em 6em;
+        padding: 2em 4.5em;
         display: grid;
         justify-self: center;
         grid-template-columns: 40% 60%;
@@ -77,12 +84,12 @@
 .links a {
     position: relative !important;
     margin-right: 1em;
-    padding: .6em;
+    padding: .7em;
     border-radius: 40px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
-    color: #5A6064;
-    background: #E0E7EB;
+    color: #000;
+    background: #E0E0E0;
     z-index: 21;
     cursor: pointer!important;
 }
