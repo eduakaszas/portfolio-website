@@ -60,17 +60,17 @@
 }
 
 @media (min-width: 768px) {
-    .sudoku {
+    .themes {
         padding: 2em 4.5em;
         display: grid;
         justify-self: center;
         grid-template-columns: 40% 60%;
     }
-    .sudoku-img {
+    .themes-img {
         order: 0;
     }
     
-    .sudoku-text {
+    .themes-text {
         order: -1;
     }
 } 

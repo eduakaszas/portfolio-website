@@ -21,6 +21,20 @@ function Projects() {
                     </div>
                 </div>
             </li>
+            <li className="project themes">
+                <img className="image themes-img"></img>
+                <div className="text themes-text">
+                    <h3> Custom themes at Usabilla </h3>
+                    <p> 
+                        I've created numerous custom themes for our clients using SCSS.
+                    </p>
+                    <div className="links">
+                        <a href="#"> Campaign </a>
+                        <a href="#"> In-Page </a>
+                        <a href="#"> Email </a>
+                    </div>
+                </div>
+            </li>
             <li className="project sudoku">
                 <img className="image sudoku-img"></img>
                 <div className="text sudoku-text">
