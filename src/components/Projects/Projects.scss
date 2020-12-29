@@ -2,6 +2,7 @@
     padding: 0;
     list-style: none;
     z-index: -10000;
+    background-color: #f7f7f7;
 }
 
 .project {
@@ -10,27 +11,40 @@
     padding: 0;
 
     @media (min-width: 768px) {
-        padding: 2em 1.7em;
+        padding: 2em 5em;
         grid-template-columns: 60% 40%;
         gap: 1em;
         z-index: -1;
     }    
+
+    @media (min-width: 1600px) {
+        padding: 2em 10em;
+    }    
 }
 
 .image {
+    margin-top: 1em;
     justify-self: center;
     width: 90%;
     height: 15em;
-    background: #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 0 rgba(30,45,62,.09);
 
     @media (min-width: 768px) {
         order: -1;
     } 
 } 
 
+.mood-img {
+    background-image: url('../images/mood_journal.png');
+    background-color: #FFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .text {
     margin-bottom: 2em;
-    width: 90%;
+    width: 80%;
     justify-self: center;
 
     @media (min-width: 768px) {
@@ -46,31 +60,36 @@
 }
 
 @media (min-width: 768px) {
-    .sudoku {
-        padding: 2em 1.7em;
+    .themes {
+        padding: 2em 4.5em;
         display: grid;
         justify-self: center;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 40% 60%;
     }
-
-    .sudoku-img {
+    .themes-img {
         order: 0;
     }
     
-    .sudoku-text {
+    .themes-text {
         order: -1;
     }
 } 
 
+@media (min-width: 1600px) {
+    .sudoku {
+        padding: 2em 10em;
+    }
+}
+
 .links a {
     position: relative !important;
     margin-right: 1em;
-    padding: .6em;
+    padding: .7em;
     border-radius: 40px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
-    color: #5A6064;
-    background: #E0E7EB;
+    color: #000;
+    background: #E0E0E0;
     z-index: 21;
     cursor: pointer!important;
 }

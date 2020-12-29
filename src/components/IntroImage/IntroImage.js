@@ -1,10 +1,15 @@
 import React from 'react';
+import illustration from '../images/illustration.svg';
 import './IntroImage.scss';
 
 function IntroImage() {
     return (
-        <div className="intro-image">
-        </div>
+        <img 
+            className="intro-image"
+            src={ illustration }
+            alt="illustration"
+        >
+        </img>
     )
 }
 

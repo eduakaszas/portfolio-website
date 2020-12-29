@@ -8,14 +8,13 @@ function AboutMe() {
             <h3 className="about-me-title"> A little about me... </h3>
             <div className="about-me-text">
                 <p className="about-me-first"> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. 
+                    I'm a self-taught web developer based in the Netherlands, originally from Hungary.
+                    I enjoy coming up with creative solutions through code just as much as changing the color of 
+                    the same button for 3 hours straight. 
                 </p>
                 <p className="about-me-second"> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. 
+                    In my free time you'll catch me getting lost in the city, eating Indian food and
+                    watching crime documentaries.
                 </p>
             </div>
         </div>
