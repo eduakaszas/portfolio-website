@@ -9,7 +9,7 @@ function AboutMe() {
             <div className="about-me-text">
                 <p className="about-me-first"> 
                     I'm a self-taught web developer based in the Netherlands, originally from Hungary.
-                    I enjoy coming up with creative solutions just as much as changing the color of 
+                    I enjoy coming up with creative solutions through code just as much as changing the color of 
                     the same button for 3 hours straight. 
                 </p>
                 <p className="about-me-second"> 
