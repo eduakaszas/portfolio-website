@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEraser } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEraser } from '@fortawesome/free-solid-svg-icons';
 
 import './PaintPots.scss';
 
@@ -14,7 +14,7 @@ class PaintPots extends Component {
     }
 
     render() {
-        const { selectColor, clearCanvas } = this.props;
+        const { selectColor } = this.props;
 
         return (
             <nav className="paint-nav">

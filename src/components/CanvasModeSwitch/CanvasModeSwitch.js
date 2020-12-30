@@ -33,4 +33,3 @@ class CanvasModeSwitch extends React.Component {
 }
 
 export default CanvasModeSwitch;
-
