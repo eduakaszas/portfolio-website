@@ -4,10 +4,6 @@ import Switch from "react-switch";
 import './CanvasModeSwitch.scss';
 
 class CanvasModeSwitch extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         const { isDrawModeOn, switchDrawMode } = this.props;
 
