@@ -4,7 +4,7 @@ import './AboutMe.scss';
 
 function AboutMe() {
     return (
-        <div className="about-me-section">
+        <div className="about-me-section" id="about-me-section">
             <h3 className="about-me-title"> A little about me... </h3>
             <div className="about-me-text">
                 <p className="about-me-first"> 

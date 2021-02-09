@@ -7,7 +7,7 @@ import './Projects.scss';
 
 function Projects() {
     return (
-        <ul className="projects-list">
+        <ul className="projects-list" id="projects-list">
             <li className="project">
                 <div className="image mood-img"></div>
                 <div className="text mood-text">
@@ -26,7 +26,7 @@ function Projects() {
                 <div className="text themes-text">
                     <h3> Custom themes at Usabilla </h3>
                     <p> 
-                        I've created numerous custom themes for our clients using SCSS.
+                        I've created numerous custom themes for our clients using SCSS & LESS.
                     </p>
                     <div className="links">
                         <a href="/#"> Campaign </a>
