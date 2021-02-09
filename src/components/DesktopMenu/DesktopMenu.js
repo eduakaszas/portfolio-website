@@ -13,8 +13,8 @@ function DesktopMenu(props) {
                     />
                 </li>
                 <li className="draw-mode"> Draw mode </li>
-                <li><a href="/#" className="desktop-menu-item"> Projects </a></li>
-                <li><a href="/#" className="desktop-menu-item"> About </a></li>
+                <li><a href="#projects-list" className="desktop-menu-item"> Projects </a></li>
+                <li><a href="#about-me-section" className="desktop-menu-item"> About </a></li>
             </ul>
         </nav>
     )
