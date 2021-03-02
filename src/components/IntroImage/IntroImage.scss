@@ -1,8 +1,9 @@
 .intro-image {
+    padding: 1em;
     order: -1;
     justify-self: center;
-    width: 90%;
-    height: 23em;
+    width: 80%;
+    height: auto;
     // background: #ccc;
 
     @media (min-width: 768px) {

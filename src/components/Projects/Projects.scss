@@ -1,14 +1,14 @@
 .projects-list {
-    padding: 0;
+    padding: 2em 0 1em;
     list-style: none;
     z-index: -10000;
-    background-color: #f7f7f7;
+    background-color: rgba(245, 245, 245, .4);
 }
 
 .project {
     display: grid;
     justify-content: center;
-    padding: 0;
+    padding: 1em 1em;
 
     @media (min-width: 768px) {
         padding: 2em 5em;
@@ -18,28 +18,36 @@
     }    
 
     @media (min-width: 1600px) {
-        padding: 2em 10em;
+        padding: 3em 13em;
     }    
 }
 
 .image {
-    margin-top: 1em;
     justify-self: center;
-    width: 90%;
-    height: 15em;
-    border-radius: 3px;
+    //width: 100%;
+    width: 20em;
+    height: 12em;
+    border-radius: 10px;
     box-shadow: 0 0 6px 0 rgba(30,45,62,.09);
 
     @media (min-width: 768px) {
         order: -1;
+        width: 25em;
+        //height: 100%;
     } 
 } 
 
 .mood-img {
     background-image: url('../images/mood_journal.png');
-    background-color: #FFF;
-    background-size: contain;
+    //background-color: #FFF;
+    background-position: -40px 0;
+    background-size: cover;
     background-repeat: no-repeat;
+    justify-self: center;
+
+    @media (min-width: 768px) {
+        background-position: 0 0;
+    } 
 }
 
 .text {
@@ -59,6 +67,23 @@
     color:#5A6064;
 }
 
+.themes-img {
+    background-image: url('../images/getfeedback_new.png');
+    //background-color: #FFF;
+    background-position: -55px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+
+    @media (min-width: 768px) {
+        background-position: 0 0;
+    } 
+
+    @media (min-width: 1600px) {
+        background-position: -15px 0;
+    }
+}
+
 @media (min-width: 768px) {
     .themes {
         padding: 2em 4.5em;
@@ -72,12 +97,13 @@
     
     .themes-text {
         order: -1;
+        text-align: right;
     }
 } 
 
 @media (min-width: 1600px) {
     .themes {
-        padding: 2em 9.5em;
+        padding: 2em 13em;
     }
 }
 
@@ -85,11 +111,11 @@
     position: relative !important;
     margin-right: 1em;
     padding: .7em;
-    border-radius: 40px;
-    font-size: 1.1rem;
+    border-radius: 10px;
+    font-size: 1rem;
     text-align: center;
     color: #000;
-    background: #E0E0E0;
+    background: #EBEBEB;
     z-index: 21;
     cursor: pointer!important;
 }

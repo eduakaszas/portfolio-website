@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
-import './App.scss';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import IntroSection from './components/IntroSection/IntroSection';
 import Projects from './components/Projects/Projects';
 import AboutMe from './components/AboutMe/AboutMe';
 import CanvasBackground from './components/CanvasBackground/CanvasBackground';
+import TagManager from 'react-gtm-module'
+import './App.scss';
+
+
+const tagManagerArgs = {
+    gtmId: 'GTM-P2N6895'
+};
+
+TagManager.initialize(tagManagerArgs);
 
 class App extends Component {
 	constructor(props) {
@@ -29,7 +37,8 @@ class App extends Component {
 	// function to toggle the switch
 	switchDrawMode = isDrawModeOn => {
         this.setState({ isDrawModeOn });
-    }
+	}
+	
 
 	render() {
 		const browserWidth = window.innerWidth;
