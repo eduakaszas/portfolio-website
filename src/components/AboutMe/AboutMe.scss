@@ -1,9 +1,10 @@
 .about-me-section {
     display: grid;
-    padding-top: 1em;
+    padding: 1em 0;
 
     @media (min-width: 768px) {
         z-index: -1;
+        padding: 1em 6em;
     }  
 }
 

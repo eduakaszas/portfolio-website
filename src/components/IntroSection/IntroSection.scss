@@ -1,5 +1,5 @@
 .intro-section {
-    padding-top: 4em;
+    padding: 4em 0 1em;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -13,6 +13,6 @@
     }    
 
     @media (min-width: 1600px) {
-        padding: 2em 10em;
+        padding: 4em 11.5em;
     }    
 }

@@ -1,7 +1,12 @@
+// Colors
+$pink: #C15D84;
+$sub-title: #5A6064;
+
 .intro-text {
     order: 1;
     justify-self: center;
-    width: 90%;
+    width: 80%;
+    font-size: .9em;
 
     @media (min-width: 768px) {
         order: -1;
@@ -15,7 +20,7 @@
 }
 
 .intro-text h3 {
-    color: #5A6064;
+    color: $sub-title;
     font-weight: 400;
 }
 
@@ -24,4 +29,8 @@ h3 span {
     text-decoration: underline;
     z-index: 21;
     cursor: pointer!important;
+}
+
+h3 span:hover {
+    color: $pink;
 }
